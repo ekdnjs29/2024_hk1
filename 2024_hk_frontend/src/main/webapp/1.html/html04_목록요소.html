@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>html04_목록요소</title>
+		<!-- <style type="text/css">
+			li > ul {display: none;} 
+			ul li {list-style:none;}
+			b {cursor:pointer;}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				document.querySelectorAll("b")[0].onclick=function(){
+					document.querySelectorAll("li>ul")[0].style.display="block";
+				}
+			}
+		</script> -->
+		
+	</head>
+	<body>
+		<h1>비순차적 목록요소</h1>
+		<ul>
+			<li><b>java</b>
+				<ul>
+					<li>변수 사용</li>
+					<li>제어문</li>
+					<li>객체지향</li>
+				</ul>
+			</li>
+			<li><b>DataBase</b>
+				<ul>
+					<li>DBMS</li>
+					<li>DML/DDL/DCL</li>
+				</ul>
+			</li>
+			<li>HTML</li>
+			<li>CSS</li>
+		</ul>
+	
+		<h1>순차적 목록요소</h1>
+		<ol>
+			<li><b>java</b>
+				<ol>
+					<li>변수 사용</li>
+					<li>제어문</li>
+					<li>객체지향</li>
+				</ol>
+			</li>
+			<li><b>DataBase</b>
+				<ol>
+					<li>DBMS</li>
+					<li>DML/DDL/DCL</li>
+				</ol>
+			</li>
+			<li>HTML</li>
+			<li>CSS</li>
+		</ol>
+	</body>
+</html>

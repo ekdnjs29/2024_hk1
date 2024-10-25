@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>html05_표</title>
+		<style type="text/css">
+ 			table{border-collapse: collapse;} 
+			.tb{ width:400px; }
+			.table{ display: table; }
+			.tr{ display: table-row;	}
+			.td{ 
+				display: table-cell;
+				border: 1px solid black;
+				width: 100px;
+			 }
+			 /* 모바일 */
+			 @media screen and (max-width:600px) {
+				.table{ display: block; }
+				.tr{ display: block; }
+				.td{ 
+					display: block;
+					border: 1px solid black;
+					width: 30%;
+			 }
+		</style>
+	</head>
+	<body>
+		<h1>1. 기본 표 생성</h1>
+		<table border="1" class="tb">
+			<tr>
+				<th>번호</th>
+				<th>이름</th>
+				<th>생일</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>다원</td>
+				<td>2002-06-29</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>재민</td>
+				<td>1999-03-26</td>
+			</tr>
+		</table>
+		
+		<h1>2. 표의 구성요소 사용</h1>
+		<table border="1" class="tb">
+			<caption>표의 제목</caption>
+			<col width="120"/>			
+			<col width="120"/>
+			<col width="160"/>
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>이름</th>
+					<th>생일</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>다원</td>
+					<td>2002-06-29</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>재민</td>
+					<td>1999-03-26</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">바닥글 영역</td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		<h1>3. 셀 병합</h1>
+		<table border="1" class="tb">
+			<tr>
+				<td rowspan="3">1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td colspan="2">2</td>
+			</tr>
+		</table>
+		
+		<h1>4. 표 안에 표 작성</h1>
+		<table border="1" class="tb">
+			<tr>
+				<td>
+					<table border="1">
+					<col width="100"/>	
+						<tr><td>테이블1</td></tr>
+						<tr><td>테이블1</td></tr>						
+					</table>
+				</td>
+				<td>
+					<table border="1">
+					<col width="100"/>	
+						<tr><td>테이블2</td></tr>
+						<tr><td>테이블2</td></tr>						
+					</table>
+				</td>				
+			</tr>
+		</table>
+		
+		<h1>5. div태그로 표 작성</h1>
+		<div class="table">
+			<div class="tr">
+				<div class="td">1</div>
+				<div class="td">2</div>
+				<div class="td">3</div>
+			</div>
+			<div class="tr">
+				<div class="td">1</div>
+				<div class="td">2</div>
+				<div class="td">3</div>
+			</div>
+			<div class="tr">
+				<div class="td">1</div>
+				<div class="td">2</div>
+				<div class="td">3</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+

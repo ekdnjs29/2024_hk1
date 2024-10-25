@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>html03_이미지요소</title>
+	</head>
+	<body>
+		<h1>이미지요소</h1>
+		<p>: 이미지를 웹페이지에 표현할 때 사용</p>
+		<p>사이즈 조절 시 해상도 고려</p>
+		<p>
+			<img src="https://images.velog.io/images/prayme/post/ca68c385-7fbe-4bd0-a780-4a1878cdde8d/%EB%A9%94..%EB%AA%A8..%ED%95%91%EA%B5%AC.png"
+				 alt="공부..." height="200"/>
+		</p>
+		<h1>이미지맵 사용</h1>
+		<img usemap="#menu" 
+			 src ="https://marketplace.canva.com/EAFre7i7Ne8/1/0/1131w/canva-%ED%9D%B0%EC%83%89-%ED%9A%8C%EC%83%89-%EB%A9%94%EB%89%B4-%EC%82%AC%EC%A7%84%EC%9D%B4-%EC%9E%88%EB%8A%94-%EC%A4%91%EC%8B%9D-%EB%A9%94%EB%89%B4%ED%8C%90-91UgsPjx66Q.jpg"
+			 alt="차림표" height="500"/>
+		<map name="menu">
+			<area alt="짜장면"
+			 	  href="img/짜장면.png"
+			 	  shape="rect"
+			 	  coords="40, 180, 130, 260"
+			 	  target="_blank"
+			/>
+			<area alt="짜장면"
+			 	  href="img/짬뽕.png"
+			 	  shape="rect"
+			 	  coords="140, 180, 230, 260"
+			 	  target="_blank"
+			/>
+		</map>
+		<hr/>
+		<a target="tt" href="html01_구성요소.html">이동</a><br/>
+		<iframe name="tt" src="html02_블록요소_인라인요소.html"
+				style="width:400px; height:500px;"></iframe>
+	</body>
+</html>
